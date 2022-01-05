@@ -2,6 +2,7 @@ package entity;
 
 import entity.member.Customer;
 import entity.member.Expert;
+import entity.services.SubService;
 import enumeration.OrderState;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

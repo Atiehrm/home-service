@@ -1,5 +1,6 @@
 package entity.member;
 
+import entity.services.SubService;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -10,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author arm 1/5/2022
@@ -25,7 +27,7 @@ public class Expert extends User{
     @Column(nullable = false)
     private byte[] image;
     @ManyToMany
-    private Set<SubServices> services = new HashSet<>();
+    private Set<SubService> services = new HashSet<>();
     private long credit;
 
 }
