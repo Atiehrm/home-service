@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -45,5 +45,5 @@ public class Order {
     @ManyToOne
     private Expert expert;
     @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
-    private List<Suggestion> suggestions = new HashSet<>();
+    private List<WorkSuggestion> workSuggestions = new ArrayList<>();
 }

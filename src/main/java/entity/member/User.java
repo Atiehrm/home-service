@@ -1,16 +1,15 @@
 package entity.member;
 
 import entity.Address;
+import enumeration.UserState;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import enumeration.UserState;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
