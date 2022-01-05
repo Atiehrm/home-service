@@ -37,7 +37,7 @@ public class HibernateUtil {
                     setting.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
                     setting.put(Environment.SHOW_SQL, "true");
                     setting.put(Environment.FORMAT_SQL, "true");
-                    setting.put(Environment.HBM2DDL_AUTO, "create-drop");
+                    setting.put(Environment.HBM2DDL_AUTO, "create");
 
                     configuration.setProperties(setting);
                     configuration.addAnnotatedClass(User.class);
