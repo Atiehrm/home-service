@@ -36,7 +36,7 @@ public class UserService {
         if (user.isPresent()) {
             return user.get();
         } else {
-            throw new RuntimeException("email not exist!");
+            throw new RuntimeException(" user email not exist!");
         }
     }
 
@@ -46,7 +46,7 @@ public class UserService {
             userDao.updatePassword(email, newPass);
         }
         else {
-            throw new RuntimeException("email not exist!");
+            throw new RuntimeException("user email not exist!");
         }
     }
 

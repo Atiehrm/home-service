@@ -1,6 +1,7 @@
 package service;
 
 import dao.CustomerDao;
+import lombok.Data;
 import model.entity.member.Customer;
 import model.entity.member.User;
 
@@ -9,6 +10,7 @@ import java.util.Optional;
 /**
  * @author arm
  */
+@Data
 public class CustomerService {
     private CustomerDao customerDao;
 
@@ -21,7 +23,7 @@ public class CustomerService {
         if (customer.isPresent()) {
             return customer.get();
         } else {
-            throw new RuntimeException("email not exist!");
+            throw new RuntimeException("customer email not exist!");
         }
     }
 
