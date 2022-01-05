@@ -1,6 +1,7 @@
 package model.entity.member;
 
 import model.entity.Address;
+import model.enumeration.UserRole;
 import model.enumeration.UserState;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -36,4 +37,6 @@ public class User {
     private Calendar registerDate;
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
     private List<Address> addresses = new ArrayList<>();
+    @Enumerated(value = EnumType.STRING)
+    private UserRole userRole;
 }
