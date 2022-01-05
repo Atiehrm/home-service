@@ -6,7 +6,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
@@ -70,5 +69,16 @@ public class UserDao {
         return user;
     }
 
+    public int updatePassword(String email, String newPassword) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+        Query query = session.createQuery("update Customer set password=:password where email=:email ");
+        query.setParameter("email", email);
+        query.setParameter("password", newPassword);
+        int id = query.executeUpdate();
+        transaction.commit();
+        session.close();
+        return id;
+    }
 
 }

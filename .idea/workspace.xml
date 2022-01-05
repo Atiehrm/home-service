@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
-    </list>
+    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641396104168</updated>
-      <workItem from="1641396106176" duration="12553000" />
+      <workItem from="1641396106176" duration="12994000" />
     </task>
     <servers />
   </component>
