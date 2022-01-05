@@ -1,6 +1,7 @@
 package dao;
 
 import config.HibernateUtil;
+import model.entity.member.Expert;
 import model.entity.member.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -81,5 +82,15 @@ public class UserDao {
         return id;
     }
 
+    public Optional<User> findByEmail(String email) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+        Query<User> query = session.createQuery("FROM User u WHERE u.email=:email");
+        query.setParameter("email", email);
+        Optional<User> user = Optional.ofNullable(query.uniqueResult());
+        transaction.commit();
+        session.close();
+        return user;
+    }
 
 }
