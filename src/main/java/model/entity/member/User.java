@@ -31,6 +31,7 @@ public class User {
     private String password;
     @Enumerated(EnumType.STRING)
     private UserState state;
+    @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
     private Calendar registerDate;
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
