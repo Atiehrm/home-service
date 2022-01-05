@@ -14,9 +14,8 @@ import java.util.Optional;
 public class ServiceService {
     private ServiceDao serviceDao;
 
-    public boolean addService(Service service) {
+    public void addService(Service service) {
         serviceDao.save(service);
-        return true;
     }
 
     public List<String> getAllServiceNames() {
