@@ -1,7 +1,8 @@
-package entity;
+package model.entity;
 
-import entity.member.Expert;
+import model.entity.member.Expert;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
@@ -16,6 +17,7 @@ import java.util.Calendar;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class WorkSuggestion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

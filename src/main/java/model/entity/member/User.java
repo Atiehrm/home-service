@@ -1,7 +1,7 @@
-package entity.member;
+package model.entity.member;
 
-import entity.Address;
-import enumeration.UserState;
+import model.entity.Address;
+import model.enumeration.UserState;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;

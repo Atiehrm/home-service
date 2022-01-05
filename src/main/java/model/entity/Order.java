@@ -1,9 +1,9 @@
-package entity;
+package model.entity;
 
-import entity.member.Customer;
-import entity.member.Expert;
-import entity.services.SubService;
-import enumeration.OrderState;
+import model.entity.member.Customer;
+import model.entity.member.Expert;
+import model.entity.services.SubService;
+import model.enumeration.OrderState;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

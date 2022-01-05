@@ -1,6 +1,6 @@
-package entity.member;
+package model.entity.member;
 
-import entity.services.SubService;
+import model.entity.services.SubService;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

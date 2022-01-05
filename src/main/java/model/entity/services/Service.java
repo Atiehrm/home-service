@@ -1,4 +1,4 @@
-package entity.services;
+package model.entity.services;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

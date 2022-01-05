@@ -1,6 +1,6 @@
-package entity.member;
+package model.entity.member;
 
-import entity.Order;
+import model.entity.Order;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;

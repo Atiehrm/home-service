@@ -1,4 +1,4 @@
-package entity.member;
+package model.entity.member;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
