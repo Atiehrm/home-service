@@ -8,5 +8,5 @@ public enum OrderState {
     PENDING_EXPERTS_IN_PLACE,
     STARTED,
     DONE,
-    PAID;
+    PAID
 }

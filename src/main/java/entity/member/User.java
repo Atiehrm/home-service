@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -32,7 +33,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserState state;
     @CreationTimestamp
-    private Date registerDate;
+    private Calendar registerDate;
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
     private List<Address> addresses = new ArrayList<>();
 }

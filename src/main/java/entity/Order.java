@@ -10,10 +10,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
-import javax.annotation.sql.DataSourceDefinition;
 import javax.persistence.*;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.HashSet;
+import java.util.List;
 
 /**
  * @author arm 1/5/2022
@@ -35,9 +35,9 @@ public class Order {
     @Enumerated(value = EnumType.STRING)
     private OrderState orderState;
     @CreationTimestamp
-    private Date registrationDate;
+    private Calendar registrationDate;
     @CreationTimestamp
-    private Date doneTime;
+    private Calendar doneTime;
     @OneToOne
     private Address address;
     @ManyToOne
