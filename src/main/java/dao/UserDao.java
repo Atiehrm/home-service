@@ -46,7 +46,7 @@ public class UserDao {
         session.close();
     }
 
-    public List<User> getAllUsers() {
+    public List<User> getAll() {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         Query query = session.createQuery("from  User ");
@@ -80,5 +80,6 @@ public class UserDao {
         session.close();
         return id;
     }
+
 
 }
