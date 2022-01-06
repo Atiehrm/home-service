@@ -5,8 +5,10 @@ import model.entity.member.User;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.query.Query;
+import org.hibernate.transform.Transformers;
 import util.HibernateUtil;
 import util.filter.UserFilter;
 
@@ -116,6 +118,21 @@ public class UserDao {
         if (filter.getEmail() != null) {
             criteria.add(Restrictions.eq("u.email", filter.getEmail()));
         }
+
+        criteria.setProjection(Projections.projectionList()
+                .add(Projections.property("u.registerDate").as("registerDate"))
+                .add(Projections.property("u.userRole").as("userRole"))
+                .add(Projections.property("u.firstName").as("firstName"))
+                .add(Projections.property("u.lastName").as("lastName"))
+                .add(Projections.property("u.email").as("email"))
+                .add(Projections.property("u.userState").as("userState"))
+                .add(Projections.property("u.id").as("id")));
+
+        criteria.setResultTransformer(Transformers.aliasToBean(UserDto.class));
+        List<UserDto> list = criteria.list();
+        transaction.commit();
+        session.close();
+        return list;
     }
 
 }
