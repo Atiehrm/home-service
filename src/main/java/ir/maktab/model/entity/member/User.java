@@ -3,13 +3,16 @@ package ir.maktab.model.entity.member;
 import ir.maktab.model.entity.Address;
 import ir.maktab.model.enumeration.UserRole;
 import ir.maktab.model.enumeration.UserState;
+import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.util.*;
+import java.util.Calendar;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author arm 1/5/2022
@@ -17,7 +20,8 @@ import java.util.*;
 @Data
 @NoArgsConstructor
 @Entity
-@SuperBuilder
+@Builder
+@EqualsAndHashCode
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class User {
     @Id
@@ -33,7 +37,7 @@ public class User {
     @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
     private Calendar registerDate;
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Set<Address> addresses = new HashSet<>();
     @Enumerated(value = EnumType.STRING)
     private UserRole userRole;
