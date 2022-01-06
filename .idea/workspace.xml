@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="" />
+    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindServiceByNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindServiceByNameTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,8 +39,8 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.FindByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse">
-    <configuration name="FindByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FindUserByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse">
+    <configuration name="FindUserByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-service-project" />
       <extension name="coverage">
         <pattern>
@@ -46,14 +49,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ir.maktab.service" />
-      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.FindByEmailTest" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.FindUserByEmailTest" />
       <option name="METHOD_NAME" value="givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindByEmailTest.givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindUserByEmailTest.givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-service-project" />
       <extension name="coverage">
         <pattern>
@@ -62,7 +65,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ir.maktab.service" />
-      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.FindByEmailTest" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.FindUserByEmailTest" />
       <option name="METHOD_NAME" value="givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -71,8 +74,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse" />
-        <item itemvalue="JUnit.FindByEmailTest.givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse" />
+        <item itemvalue="JUnit.FindUserByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse" />
+        <item itemvalue="JUnit.FindUserByEmailTest.givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +89,7 @@
       <updated>1641396104168</updated>
       <workItem from="1641396106176" duration="329000" />
       <workItem from="1641469124985" duration="48000" />
-      <workItem from="1641477473956" duration="8153000" />
+      <workItem from="1641477473956" duration="9150000" />
     </task>
     <servers />
   </component>
