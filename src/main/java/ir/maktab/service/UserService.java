@@ -1,8 +1,8 @@
 package ir.maktab.service;
 
 import ir.maktab.dao.UserDao;
-import lombok.Data;
 import ir.maktab.model.entity.member.User;
+import lombok.Data;
 
 import java.util.Optional;
 
@@ -18,7 +18,17 @@ public class UserService {
     }
 
     public void update(User user) {
-        userDao.update(user);
+        String email = user.getEmail();
+        String password = user.getPassword();
+        if (userDao.findByEmailAndPass(email, password).isPresent())
+            userDao.update(user);
+    }
+
+    public void delete(User user) {
+        String email = user.getEmail();
+        String password = user.getPassword();
+        if (userDao.findByEmailAndPass(email, password).isPresent())
+            userDao.delete(user);
     }
 
     public User findByEmailAndPass(String email, String password) {
@@ -41,10 +51,9 @@ public class UserService {
 
     public void changePassword(String email, String newPass) {
         Optional<User> foundedEmail = userDao.findByEmail(email);
-        if (foundedEmail.isPresent()){
+        if (foundedEmail.isPresent()) {
             userDao.updatePassword(email, newPass);
-        }
-        else {
+        } else {
             throw new RuntimeException("user email not exist!");
         }
     }

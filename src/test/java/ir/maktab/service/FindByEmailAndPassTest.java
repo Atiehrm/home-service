@@ -35,6 +35,8 @@ public class FindByEmailAndPassTest {
     void givenWrongEmailAndPass_WhenFindByEmailAndPassCalls_ThenReturnFalseResponse(String email, String password) {
         Exception exception = assertThrows(RuntimeException.class, () ->
                 userService.findByEmailAndPass(email, password));
-        Assertions.assertEquals("wrong input!", exception.getMessage());
+        Assertions.assertEquals("user not exist!", exception.getMessage());
     }
+
+
 }

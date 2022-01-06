@@ -34,6 +34,6 @@ public class FindByEmailTest {
     @CsvSource({"Atieh.rahbari.gmail.com"})
     void givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse(String email) {
         Exception exception = assertThrows(RuntimeException.class, () -> userService.findByEmail(email));
-        Assertions.assertEquals("email not exist!", exception.getMessage());
+        Assertions.assertEquals("user email not exist!", exception.getMessage());
     }
 }
