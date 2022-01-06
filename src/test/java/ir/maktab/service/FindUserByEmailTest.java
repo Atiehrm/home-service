@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 /**
  * @author arm
  */
-public class FindByEmailTest {
+public class FindUserByEmailTest {
     UserService userService;
 
     @BeforeEach
