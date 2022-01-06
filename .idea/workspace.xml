@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="" />
+    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/config/ServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/config/ServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +41,46 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RunManager" selected="JUnit.FindByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse">
+    <configuration name="FindByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="home-service-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ir.maktab.service" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.FindByEmailTest" />
+      <option name="METHOD_NAME" value="givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindByEmailTest.givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="home-service-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ir.maktab.service" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.FindByEmailTest" />
+      <option name="METHOD_NAME" value="givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FindByEmailTest.givenTrueEmail_WhenFindByEmailCalls_ThenReturnTrueResponse" />
+        <item itemvalue="JUnit.FindByEmailTest.givenWrongEmail_WhenFindByEmailCalls_ThenReturnFalseResponse" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +91,7 @@
       <updated>1641396104168</updated>
       <workItem from="1641396106176" duration="329000" />
       <workItem from="1641469124985" duration="48000" />
-      <workItem from="1641477473956" duration="1304000" />
+      <workItem from="1641477473956" duration="3462000" />
     </task>
     <servers />
   </component>

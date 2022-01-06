@@ -9,9 +9,7 @@ import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author arm 1/5/2022
@@ -36,7 +34,7 @@ public class User {
     @CreationTimestamp
     private Calendar registerDate;
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
-    private List<Address> addresses = new ArrayList<>();
+    private Set<Address> addresses = new HashSet<>();
     @Enumerated(value = EnumType.STRING)
     private UserRole userRole;
 }
