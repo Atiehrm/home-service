@@ -1,9 +1,9 @@
-package validation;
+package util;
 
 /**
  * @author arm
  */
-public class Validation {
+public class ValidationUtil {
     public static boolean isNumeric(String input) {
         if (input.matches("[0-9]+")) {
             return true;

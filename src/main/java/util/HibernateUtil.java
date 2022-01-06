@@ -1,4 +1,4 @@
-package config;
+package util;
 
 import jdk.jshell.SourceCodeAnalysis;
 import model.entity.Address;

@@ -1,6 +1,6 @@
 package dao;
 
-import config.HibernateUtil;
+import util.HibernateUtil;
 import model.entity.Order;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

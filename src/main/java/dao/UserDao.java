@@ -1,7 +1,6 @@
 package dao;
 
-import config.HibernateUtil;
-import model.entity.member.Expert;
+import util.HibernateUtil;
 import model.entity.member.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
