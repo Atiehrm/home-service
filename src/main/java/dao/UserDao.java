@@ -1,10 +1,14 @@
 package dao;
 
-import util.HibernateUtil;
+import dto.UserDto;
 import model.entity.member.User;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.hibernate.query.Query;
+import util.HibernateUtil;
+import util.filter.UserFilter;
 
 import java.util.List;
 import java.util.Optional;
@@ -90,6 +94,28 @@ public class UserDao {
         transaction.commit();
         session.close();
         return user;
+    }
+
+    public List<UserDto> findUsersByFiltering(UserFilter filter) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+        Criteria criteria = session.createCriteria(User.class, "u");
+        if (filter.getUserRole() != null) {
+            criteria.add(Restrictions.eq("u.userRole", filter.getUserRole()));
+        }
+        if (filter.getFirstName() != null) {
+            criteria.add(Restrictions.eq("u.firstName", filter.getFirstName()));
+        }
+        if (filter.getLastName() != null) {
+            criteria.add(Restrictions.eq("u.lastName", filter.getLastName()));
+        }
+        if (filter.getRegisterDate() != null) {
+            criteria.add(Restrictions.eq("u.registerDate", filter.getLastName()));
+
+        }
+        if (filter.getEmail() != null) {
+            criteria.add(Restrictions.eq("u.email", filter.getEmail()));
+        }
     }
 
 }
