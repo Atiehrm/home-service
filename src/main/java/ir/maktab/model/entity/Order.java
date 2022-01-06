@@ -26,7 +26,7 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private double suggestedPrice;
+    private long suggestedPrice;
     private String requestDescription;
     @OneToOne
     private SubService subService;
