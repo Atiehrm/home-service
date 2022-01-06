@@ -40,10 +40,10 @@ public class Order {
     private Calendar doneTime;
     @OneToOne
     private Address address;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Customer customer;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Expert expert;
-    @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "order", fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     private Set<WorkSuggestion> workSuggestions = new HashSet<>();
 }

@@ -23,6 +23,6 @@ public class Address {
     private String city;
     private String street;
     private String postalCode;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private User user;
 }

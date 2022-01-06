@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Entity;
 
@@ -12,7 +13,7 @@ import javax.persistence.Entity;
  */
 @Data
 @NoArgsConstructor
-@Builder
+@SuperBuilder
 @Entity
 @EqualsAndHashCode(callSuper = true)
 public class Manager extends User {

@@ -3,10 +3,8 @@ package ir.maktab.model.entity.member;
 import ir.maktab.model.entity.Address;
 import ir.maktab.model.enumeration.UserRole;
 import ir.maktab.model.enumeration.UserState;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -19,8 +17,9 @@ import java.util.Set;
  */
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Builder
+@SuperBuilder
 @EqualsAndHashCode
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class User {

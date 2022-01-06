@@ -29,7 +29,7 @@ public class WorkSuggestion {
     private Calendar startingWorkTime;
     @OneToOne
     private Expert expert;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Order order;
 
 }
