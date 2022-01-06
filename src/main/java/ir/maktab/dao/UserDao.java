@@ -90,7 +90,7 @@ public class UserDao {
     public Optional<User> findByEmail(String email) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
-        Query<User> query = session.createQuery("FROM User u WHERE u.email=:email");
+        Query<User> query = session.createQuery("from User u where u.email=:email");
         query.setParameter("email", email);
         Optional<User> user = Optional.ofNullable(query.uniqueResult());
         transaction.commit();

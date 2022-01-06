@@ -22,6 +22,6 @@ public class IsValidEmailTest {
     void givenInvalidEmail_WhenIsValidEmailCalls_ThenExceptionResponseReturn(String email) {
         Exception exception = assertThrows(RuntimeException.class, () ->
                 ValidationUtil.isValidEmail(email));
-        Assertions.assertEquals("not valid email address", exception.getMessage());
+        Assertions.assertEquals("email is not valid", exception.getMessage());
     }
 }

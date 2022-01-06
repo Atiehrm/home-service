@@ -44,6 +44,6 @@ public class Order {
     private Customer customer;
     @ManyToOne(cascade = CascadeType.ALL)
     private Expert expert;
-    @OneToMany(mappedBy = "order", fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "order", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<WorkSuggestion> workSuggestions = new HashSet<>();
 }

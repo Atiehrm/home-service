@@ -27,8 +27,12 @@ public class UserService {
     public void delete(User user) {
         String email = user.getEmail();
         String password = user.getPassword();
-        if (userDao.findByEmailAndPass(email, password).isPresent())
+        if (userDao.findByEmailAndPass(email, password).isPresent()){
             userDao.delete(user);
+        }
+        else {
+            throw new RuntimeException("user not exist!");
+        }
     }
 
     public User findByEmailAndPass(String email, String password) {

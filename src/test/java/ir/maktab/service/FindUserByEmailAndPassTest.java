@@ -37,6 +37,4 @@ public class FindUserByEmailAndPassTest {
                 userService.findByEmailAndPass(email, password));
         Assertions.assertEquals("user not exist!", exception.getMessage());
     }
-
-
 }

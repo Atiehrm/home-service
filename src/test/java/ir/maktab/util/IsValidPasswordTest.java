@@ -23,6 +23,7 @@ public class IsValidPasswordTest {
     void givenInvalidPassword_WhenIsValidPasswordCalls_ThenExceptionResponseReturn(String password) {
         Exception exception = assertThrows(RuntimeException.class, () ->
                 ValidationUtil.isValidPassword(password));
-        Assertions.assertEquals("not valid password", exception.getMessage());
+        Assertions.assertEquals("password must be less than 8 chars,include uppercase," +
+                "lowercase,no whitespace", exception.getMessage());
     }
 }
