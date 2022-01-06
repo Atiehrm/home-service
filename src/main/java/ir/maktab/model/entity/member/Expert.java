@@ -10,7 +10,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -22,12 +24,11 @@ import java.util.Set;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class Expert extends User{
-
     @Lob
     @Column(nullable = false)
     private byte[] image;
     @ManyToMany
-    private Set<SubService> services = new HashSet<>();
+    private List<SubService> services = new ArrayList<>();
     private long credit;
 
 }
