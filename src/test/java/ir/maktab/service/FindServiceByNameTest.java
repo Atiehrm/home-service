@@ -30,7 +30,7 @@ public class FindServiceByNameTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"home design"})
+    @CsvSource({"internal design"})
     void givenTrueServiceName_WhenFindServiceByNameCalls_ThenReturnTrueResponse(String name) {
         serviceService.findByName(name);
         Assertions.assertTrue(true);
