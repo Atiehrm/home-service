@@ -11,9 +11,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author arm 1/5/2022
@@ -45,5 +43,5 @@ public class Order {
     @ManyToOne
     private Expert expert;
     @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
-    private List<WorkSuggestion> workSuggestions = new ArrayList<>();
+    private Set<WorkSuggestion> workSuggestions = new HashSet<>();
 }

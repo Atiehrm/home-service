@@ -36,6 +36,6 @@ public class ValidationUtil {
         if (input.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8}$")) {
             return true;
         }
-        throw new RuntimeException("password must be less than 8 chars, include uppercase,lowercase,no whitespace ");
+        throw new RuntimeException("password must be less than 8 chars,include uppercase,lowercase,no whitespace");
     }
 }
