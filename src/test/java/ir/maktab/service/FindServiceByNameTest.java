@@ -26,7 +26,7 @@ public class FindServiceByNameTest {
     @CsvSource({"wkiii"})
     void givenWrongServiceName_WhenFindServiceByNameCalls_ThenReturnFalseResponse(String name) {
         Exception exception = assertThrows(RuntimeException.class, () -> serviceService.findByName(name));
-        Assertions.assertEquals("service name is wrong", exception.getMessage());
+        Assertions.assertEquals("service not found!", exception.getMessage());
     }
 
     @ParameterizedTest
