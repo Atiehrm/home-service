@@ -1,6 +1,6 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.ManagerDao;
+import ir.maktab.data.dao.ManagerRepository;
 import lombok.Data;
 import ir.maktab.data.model.entity.member.Manager;
 
@@ -9,9 +9,9 @@ import ir.maktab.data.model.entity.member.Manager;
  */
 @Data
 public class ManagerService {
-    private ManagerDao managerDao;
+    private ManagerRepository managerRepository;
 
     public void save(Manager manager) {
-        managerDao.save(manager);
+        managerRepository.save(manager);
     }
 }

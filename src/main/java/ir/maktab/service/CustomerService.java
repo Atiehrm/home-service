@@ -1,6 +1,5 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.CustomerDao;
 import ir.maktab.data.dao.CustomerRepository;
 import ir.maktab.exception.EmailException;
 import lombok.Data;
