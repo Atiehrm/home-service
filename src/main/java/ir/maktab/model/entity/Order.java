@@ -12,6 +12,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -30,20 +31,21 @@ public class Order {
     private int id;
     private long suggestedPrice;
     private String requestDescription;
-    @OneToOne
+    @ManyToOne
     private SubService subService;
     @Enumerated(value = EnumType.STRING)
     private OrderState orderState;
     @CreationTimestamp
-    private Calendar registrationDate;
-    @CreationTimestamp
-    private Calendar doneTime;
-    @OneToOne
+    private Date registrationDate;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date doneTime;
+    @ManyToOne
     private Address address;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
+    @JoinColumn(nullable = false)
     private Customer customer;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Expert expert;
-    @OneToMany(mappedBy = "order", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "order")
     private Set<WorkSuggestion> workSuggestions = new HashSet<>();
 }

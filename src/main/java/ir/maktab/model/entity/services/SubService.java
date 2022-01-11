@@ -21,7 +21,7 @@ public class SubService {
     private int id;
     @Column(unique = true)
     private String name;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Service service;
     private long price;
     private String description;

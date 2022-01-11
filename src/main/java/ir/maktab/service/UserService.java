@@ -1,6 +1,8 @@
 package ir.maktab.service;
 
 import ir.maktab.dao.UserDao;
+import ir.maktab.exception.EmailException;
+import ir.maktab.exception.EntityExistException;
 import ir.maktab.model.entity.member.User;
 import lombok.Data;
 
@@ -40,7 +42,7 @@ public class UserService {
         if (user.isPresent()) {
             return user.get();
         } else {
-            throw new RuntimeException("user not exist!");
+            throw new EntityExistException("user not exist!");
         }
     }
 
@@ -49,7 +51,7 @@ public class UserService {
         if (user.isPresent()) {
             return user.get();
         } else {
-            throw new RuntimeException(" user email not exist!");
+            throw new EmailException(" user email not exist!");
         }
     }
 
@@ -58,7 +60,7 @@ public class UserService {
         if (foundedEmail.isPresent()) {
             userDao.updatePassword(email, newPass);
         } else {
-            throw new RuntimeException("user email not exist!");
+            throw new EmailException("user email not exist!");
         }
     }
 

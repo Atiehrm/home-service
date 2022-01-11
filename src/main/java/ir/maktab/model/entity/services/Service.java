@@ -24,6 +24,6 @@ public class Service {
     private int id;
     @Column(unique = true)
     private String name;
-    @OneToMany(mappedBy = "service", fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "service", fetch = FetchType.EAGER)
     private Set<SubService> subServices = new HashSet<>();
 }

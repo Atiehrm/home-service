@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -35,7 +36,7 @@ public class User {
     private UserState state;
     @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
-    private Calendar registerDate;
+    private Date registerDate;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Set<Address> addresses = new HashSet<>();
     @Enumerated(value = EnumType.STRING)

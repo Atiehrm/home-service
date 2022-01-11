@@ -1,6 +1,7 @@
 package ir.maktab.service;
 
 import ir.maktab.dao.ServiceDao;
+import ir.maktab.exception.EntityExistException;
 import lombok.Data;
 import ir.maktab.model.entity.services.Service;
 
@@ -27,7 +28,7 @@ public class ServiceService {
         if (service.isPresent()) {
             return service.get();
         } else {
-            throw new RuntimeException("service not found!");
+            throw new EntityExistException("service not found!");
         }
     }
 }

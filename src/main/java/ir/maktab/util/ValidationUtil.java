@@ -1,5 +1,8 @@
 package ir.maktab.util;
 
+import ir.maktab.exception.EmailException;
+import ir.maktab.exception.PasswordException;
+
 /**
  * @author arm
  */
@@ -22,7 +25,7 @@ public class ValidationUtil {
         if (input.matches("^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$")) { // permitted by RFC 5322
             return true;
         }
-        throw new RuntimeException("email is not valid ");
+        throw new EmailException("email is not valid ");
     }
 
     public static boolean isValidNationalCode(String input) {
@@ -36,6 +39,6 @@ public class ValidationUtil {
         if (input.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8}$")) {
             return true;
         }
-        throw new RuntimeException("password must be less than 8 chars,include uppercase,lowercase,no whitespace");
+        throw new PasswordException("password must be less than 8 chars,include uppercase,lowercase,no whitespace");
     }
 }

@@ -23,13 +23,14 @@ public class WorkSuggestion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @CreationTimestamp
-    private Calendar creationDateOfSuggestion;
+    private Calendar creationDateOfSuggestion;//short name
     private long suggestedPrice;
-    private int periodOfWorkTime;
-    private Calendar startingWorkTime;
-    @OneToOne
+    private long periodOfWorkTime; //minute
+    @Temporal(TemporalType.TIME)
+    private Calendar startingWorkTime; //Date
+    @ManyToOne
     private Expert expert;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Order order;
 
 }

@@ -1,5 +1,6 @@
 package ir.maktab.model.entity.member;
 
+import ir.maktab.model.entity.Comment;
 import ir.maktab.model.entity.Order;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -25,5 +26,5 @@ public class Customer extends User {
     private long credit;
     @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     private List<Order> orders = new ArrayList<>();
-    private String comment;
+    private Comment comment;
 }

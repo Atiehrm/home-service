@@ -5,6 +5,7 @@ package ir.maktab.model.enumeration;
  */
 public enum OrderState {
     PENDING_EXPERTS_SUGGESTION,
+    PENDING_CHOOSE_EXPERT,
     PENDING_EXPERTS_IN_PLACE,
     STARTED,
     DONE,

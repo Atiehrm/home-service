@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindUserByEmailAndPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindUserByEmailAndPassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/util/IsValidEmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/util/IsValidEmailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/util/IsValidPasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/util/IsValidPasswordTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/util/IsValidEmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/util/IsValidEmailTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/util/IsValidPasswordTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/util/IsValidPasswordTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/WorkSuggestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/WorkSuggestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/Expert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/Expert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/services/SubService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/services/SubService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/model/enumeration/OrderState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/enumeration/OrderState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/SaveOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/SaveOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +33,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="23HfncqvNw8eg3rnmO8v1cvrQZ4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -44,6 +56,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ir.maktab.model.entity" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.ChangePasswordTest.givenWrongPassword_WhenChangePasswordCalls_ThenReturnFalseResponse">
     <configuration name="AddNewSubServiceTest.givenWrongSubService_WhenAddSubServiceCalls_ThenReturnFalseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -146,7 +163,9 @@
       <updated>1641396104168</updated>
       <workItem from="1641396106176" duration="329000" />
       <workItem from="1641469124985" duration="48000" />
-      <workItem from="1641477473956" duration="20002000" />
+      <workItem from="1641477473956" duration="20142000" />
+      <workItem from="1641542280556" duration="5969000" />
+      <workItem from="1641921038524" duration="1031000" />
     </task>
     <servers />
   </component>

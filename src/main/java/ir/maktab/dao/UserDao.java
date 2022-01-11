@@ -27,7 +27,7 @@ public class UserDao {
         session.close();
     }
 
-    public User read(int id) {
+    public User findById(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         User foundedUser = session.get(User.class, id);
@@ -52,7 +52,7 @@ public class UserDao {
         session.close();
     }
 
-    public List<User> getAll() {
+    public List<User> findAll() {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         Query query = session.createQuery("from  User ");

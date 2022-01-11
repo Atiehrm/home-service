@@ -1,6 +1,7 @@
 package ir.maktab.service;
 
 import ir.maktab.dao.ExpertDao;
+import ir.maktab.exception.EmailException;
 import lombok.Data;
 import ir.maktab.model.entity.member.Expert;
 
@@ -30,7 +31,7 @@ public class ExpertService {
         if (expert.isPresent()) {
             return expert.get();
         } else {
-            throw new RuntimeException("expert email not found! ");
+            throw new EmailException("expert email not found! ");
         }
     }
 }

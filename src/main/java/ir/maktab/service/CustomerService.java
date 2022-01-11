@@ -1,6 +1,7 @@
 package ir.maktab.service;
 
 import ir.maktab.dao.CustomerDao;
+import ir.maktab.exception.EmailException;
 import lombok.Data;
 import ir.maktab.model.entity.member.Customer;
 
@@ -22,7 +23,7 @@ public class CustomerService {
         if (customer.isPresent()) {
             return customer.get();
         } else {
-            throw new RuntimeException("customer email not exist!");
+            throw new EmailException("customer email not exist!");
         }
     }
 
