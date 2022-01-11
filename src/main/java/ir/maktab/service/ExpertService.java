@@ -1,9 +1,9 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.ExpertDao;
+import ir.maktab.data.dao.ExpertRepository;
+import ir.maktab.data.model.entity.member.Expert;
 import ir.maktab.exception.EmailException;
 import lombok.Data;
-import ir.maktab.data.model.entity.member.Expert;
 
 import java.util.Optional;
 
@@ -12,22 +12,14 @@ import java.util.Optional;
  */
 @Data
 public class ExpertService {
-    private ExpertDao expertDao;
+    private ExpertRepository expertRepository;
 
     public void save(Expert expert) {
-        expertDao.save(expert);
-    }
-
-    public void update(Expert expert) {
-        expertDao.update(expert);
-    }
-
-    public Expert findById(int id) {
-        return expertDao.findById(id);
+        expertRepository.save(expert);
     }
 
     public Expert findByEmail(String email) {
-        Optional<Expert> expert = expertDao.findByEmail(email);
+        Optional<Expert> expert = expertRepository.findByEmail(email);
         if (expert.isPresent()) {
             return expert.get();
         } else {
