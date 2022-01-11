@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * @author arm 1/5/2022
@@ -23,11 +24,11 @@ public class WorkSuggestion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @CreationTimestamp
-    private Calendar creationDateOfSuggestion;//short name
+    private Date creationDate;
     private long suggestedPrice;
     private long periodOfWorkTime; //minute
     @Temporal(TemporalType.TIME)
-    private Calendar startingWorkTime; //Date
+    private Date startingTime;
     @ManyToOne
     private Expert expert;
     @ManyToOne

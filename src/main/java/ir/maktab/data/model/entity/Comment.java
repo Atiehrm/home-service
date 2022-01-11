@@ -17,7 +17,7 @@ public class Comment {
     private Integer id;
     private Double score;
     private String comment;
- /  private Expert expert;
+    private Expert expert;
     private Customer customer;
     @OneToOne
     private Order order;
