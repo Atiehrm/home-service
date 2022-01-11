@@ -17,5 +17,4 @@ import java.util.Optional;
 @Repository
 public interface ServiceRepository extends CrudRepository<Service,Integer> {
     Optional<Service> findByName(String name);
-
 }
