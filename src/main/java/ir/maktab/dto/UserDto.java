@@ -1,8 +1,8 @@
 package ir.maktab.dto;
 
 import lombok.Data;
-import ir.maktab.model.enumeration.UserRole;
-import ir.maktab.model.enumeration.UserState;
+import ir.maktab.data.model.enumeration.UserRole;
+import ir.maktab.data.model.enumeration.UserState;
 
 import java.util.Calendar;
 

@@ -1,8 +1,6 @@
-package ir.maktab.model.entity.member;
+package ir.maktab.data.model.entity.member;
 
-import ir.maktab.model.entity.services.Service;
-import ir.maktab.model.entity.services.SubService;
-import lombok.Builder;
+import ir.maktab.data.model.entity.services.Service;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

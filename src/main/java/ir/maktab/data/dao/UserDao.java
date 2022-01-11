@@ -1,7 +1,7 @@
-package ir.maktab.dao;
+package ir.maktab.data.dao;
 
 import ir.maktab.dto.UserDto;
-import ir.maktab.model.entity.member.User;
+import ir.maktab.data.model.entity.member.User;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

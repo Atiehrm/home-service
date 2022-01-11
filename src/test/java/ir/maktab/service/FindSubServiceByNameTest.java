@@ -1,8 +1,6 @@
 package ir.maktab.service;
 
-import ir.maktab.config.ServiceConfig;
-import ir.maktab.model.entity.services.Service;
-import ir.maktab.model.entity.services.SubService;
+import ir.maktab.config.DatabaseConfig;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -21,7 +19,7 @@ public class FindSubServiceByNameTest {
 
     @BeforeEach
     void init() {
-        ApplicationContext context = new AnnotationConfigApplicationContext(ServiceConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(DatabaseConfig.class);
         subServiceService = (SubServiceService) context.getBean("subServiceService");
     }
 

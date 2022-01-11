@@ -1,6 +1,5 @@
-package ir.maktab.model.entity.member;
+package ir.maktab.data.model.entity.member;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

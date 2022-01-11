@@ -2,7 +2,7 @@ package ir.maktab.util.filter;
 
 import lombok.Builder;
 import lombok.Data;
-import ir.maktab.model.enumeration.UserRole;
+import ir.maktab.data.model.enumeration.UserRole;
 
 import java.util.Calendar;
 

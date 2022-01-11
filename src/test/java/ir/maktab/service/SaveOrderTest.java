@@ -1,8 +1,8 @@
 package ir.maktab.service;
 
-import ir.maktab.config.ServiceConfig;
-import ir.maktab.model.entity.Order;
-import ir.maktab.model.entity.services.SubService;
+import ir.maktab.config.DatabaseConfig;
+import ir.maktab.data.model.entity.Order;
+import ir.maktab.data.model.entity.services.SubService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,7 @@ public class SaveOrderTest {
 
     @BeforeEach
     void init() {
-        ApplicationContext context = new AnnotationConfigApplicationContext(ServiceConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(DatabaseConfig.class);
         orderService = (OrderService) context.getBean("orderService");
         order = Order.builder().subService(subService).build();
     }

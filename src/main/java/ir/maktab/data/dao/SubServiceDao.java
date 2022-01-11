@@ -1,7 +1,7 @@
-package ir.maktab.dao;
+package ir.maktab.data.dao;
 
 import ir.maktab.util.HibernateUtil;
-import ir.maktab.model.entity.services.SubService;
+import ir.maktab.data.model.entity.services.SubService;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;

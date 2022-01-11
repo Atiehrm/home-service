@@ -1,9 +1,9 @@
 package ir.maktab.service;
 
-import ir.maktab.dao.CustomerDao;
+import ir.maktab.data.dao.CustomerDao;
 import ir.maktab.exception.EmailException;
 import lombok.Data;
-import ir.maktab.model.entity.member.Customer;
+import ir.maktab.data.model.entity.member.Customer;
 
 import java.util.Optional;
 

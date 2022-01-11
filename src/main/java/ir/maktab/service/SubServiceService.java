@@ -1,9 +1,9 @@
 package ir.maktab.service;
 
-import ir.maktab.dao.SubServiceDao;
+import ir.maktab.data.dao.SubServiceDao;
 import ir.maktab.exception.EntityExistException;
 import lombok.Data;
-import ir.maktab.model.entity.services.SubService;
+import ir.maktab.data.model.entity.services.SubService;
 
 import java.util.List;
 import java.util.Optional;

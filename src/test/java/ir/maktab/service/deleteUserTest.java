@@ -1,8 +1,8 @@
 package ir.maktab.service;
 
-import ir.maktab.config.ServiceConfig;
-import ir.maktab.model.entity.member.User;
-import ir.maktab.model.enumeration.UserRole;
+import ir.maktab.config.DatabaseConfig;
+import ir.maktab.data.model.entity.member.User;
+import ir.maktab.data.model.enumeration.UserRole;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,7 +20,7 @@ public class deleteUserTest {
 
     @BeforeEach
     void init() {
-        ApplicationContext context = new AnnotationConfigApplicationContext(ServiceConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(DatabaseConfig.class);
         userService = (UserService) context.getBean("userService");
         user = User.builder().firstName("atie").lastName("rm").userRole(UserRole.CUSTOMER)
                 .email("atieh@gmail.com").build();

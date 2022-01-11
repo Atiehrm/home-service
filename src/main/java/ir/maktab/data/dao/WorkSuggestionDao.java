@@ -1,7 +1,7 @@
-package ir.maktab.dao;
+package ir.maktab.data.dao;
 
 import ir.maktab.util.HibernateUtil;
-import ir.maktab.model.entity.WorkSuggestion;
+import ir.maktab.data.model.entity.WorkSuggestion;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 

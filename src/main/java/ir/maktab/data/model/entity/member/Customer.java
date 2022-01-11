@@ -1,8 +1,7 @@
-package ir.maktab.model.entity.member;
+package ir.maktab.data.model.entity.member;
 
-import ir.maktab.model.entity.Comment;
-import ir.maktab.model.entity.Order;
-import lombok.Builder;
+import ir.maktab.data.model.entity.Comment;
+import ir.maktab.data.model.entity.Order;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;

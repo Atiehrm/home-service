@@ -1,8 +1,8 @@
 package ir.maktab.service;
 
-import ir.maktab.dao.OrderDao;
+import ir.maktab.data.dao.OrderDao;
 import lombok.Data;
-import ir.maktab.model.entity.Order;
+import ir.maktab.data.model.entity.Order;
 
 /**
  * @author arm

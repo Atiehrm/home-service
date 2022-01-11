@@ -1,4 +1,4 @@
-package ir.maktab.model.enumeration;
+package ir.maktab.data.model.enumeration;
 
 /**
  * @author arm 1/5/2022

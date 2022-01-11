@@ -1,8 +1,8 @@
 package ir.maktab.service;
 
-import ir.maktab.config.ServiceConfig;
-import ir.maktab.model.entity.services.Service;
-import ir.maktab.model.entity.services.SubService;
+import ir.maktab.config.DatabaseConfig;
+import ir.maktab.data.model.entity.services.Service;
+import ir.maktab.data.model.entity.services.SubService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -22,7 +22,7 @@ public class AddNewSubServiceTest {
 
     @BeforeEach
     void init() {
-        ApplicationContext context = new AnnotationConfigApplicationContext(ServiceConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(DatabaseConfig.class);
         subServiceService = (SubServiceService) context.getBean("subServiceService");
         subService = SubService.builder().service(service).name("kitchen facilities").build();
 

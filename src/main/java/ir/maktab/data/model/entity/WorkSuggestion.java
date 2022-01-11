@@ -1,6 +1,6 @@
-package ir.maktab.model.entity;
+package ir.maktab.data.model.entity;
 
-import ir.maktab.model.entity.member.Expert;
+import ir.maktab.data.model.entity.member.Expert;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

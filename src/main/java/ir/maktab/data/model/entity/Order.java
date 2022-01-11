@@ -1,9 +1,9 @@
-package ir.maktab.model.entity;
+package ir.maktab.data.model.entity;
 
-import ir.maktab.model.entity.member.Customer;
-import ir.maktab.model.entity.member.Expert;
-import ir.maktab.model.entity.services.SubService;
-import ir.maktab.model.enumeration.OrderState;
+import ir.maktab.data.model.entity.member.Customer;
+import ir.maktab.data.model.entity.member.Expert;
+import ir.maktab.data.model.entity.services.SubService;
+import ir.maktab.data.model.enumeration.OrderState;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;

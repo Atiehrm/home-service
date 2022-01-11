@@ -1,8 +1,8 @@
 package ir.maktab.service;
 
-import ir.maktab.dao.ManagerDao;
+import ir.maktab.data.dao.ManagerDao;
 import lombok.Data;
-import ir.maktab.model.entity.member.Manager;
+import ir.maktab.data.model.entity.member.Manager;
 
 /**
  * @author arm

@@ -1,14 +1,14 @@
 package ir.maktab.util;
 
-import ir.maktab.model.entity.Address;
-import ir.maktab.model.entity.Order;
-import ir.maktab.model.entity.WorkSuggestion;
-import ir.maktab.model.entity.member.Customer;
-import ir.maktab.model.entity.member.Expert;
-import ir.maktab.model.entity.member.Manager;
-import ir.maktab.model.entity.member.User;
-import ir.maktab.model.entity.services.Service;
-import ir.maktab.model.entity.services.SubService;
+import ir.maktab.data.model.entity.Address;
+import ir.maktab.data.model.entity.Order;
+import ir.maktab.data.model.entity.WorkSuggestion;
+import ir.maktab.data.model.entity.member.Customer;
+import ir.maktab.data.model.entity.member.Expert;
+import ir.maktab.data.model.entity.member.Manager;
+import ir.maktab.data.model.entity.member.User;
+import ir.maktab.data.model.entity.services.Service;
+import ir.maktab.data.model.entity.services.SubService;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

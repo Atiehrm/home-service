@@ -1,5 +1,6 @@
-package ir.maktab.model.entity.services;
+package ir.maktab.data.model.entity;
 
+import ir.maktab.data.model.entity.member.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,18 +12,17 @@ import javax.persistence.*;
  * @author arm 1/5/2022
  */
 @Data
-@Builder
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-public class SubService {
+@Builder
+public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(unique = true)
-    private String name;
+    private String city;
+    private String street;
+    private String postalCode;
     @ManyToOne
-    private Service service;
-    private long price;
-    private String description;
+    private User user;
 }

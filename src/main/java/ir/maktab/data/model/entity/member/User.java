@@ -1,14 +1,13 @@
-package ir.maktab.model.entity.member;
+package ir.maktab.data.model.entity.member;
 
-import ir.maktab.model.entity.Address;
-import ir.maktab.model.enumeration.UserRole;
-import ir.maktab.model.enumeration.UserState;
+import ir.maktab.data.model.enumeration.UserRole;
+import ir.maktab.data.model.enumeration.UserState;
+import ir.maktab.data.model.entity.Address;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
