@@ -4,13 +4,145 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="" />
+    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/config/DaoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/config/ServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/ExpertDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/ManagerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/ServiceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/SubServiceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dao/WorkSuggestionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/exception/EmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/exception/EntityExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/exception/PasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/WorkSuggestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/Expert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/member/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/services/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/entity/services/SubService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/enumeration/OrderState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/enumeration/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/model/enumeration/UserState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/ExpertService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/ManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/ServiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/SubServiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/WorkSuggestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/util/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/util/ValidationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/util/filter/UserFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/AddNewSubServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/ChangePasswordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindServiceByNameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindSubServiceByNameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindUserByEmailAndPassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindUserByEmailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/SaveOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/deleteUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/util/IsValidEmailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/util/IsValidPasswordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/config/DaoConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/config/ServiceConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dao/CustomerDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dao/ExpertDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dao/ManagerDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dao/OrderDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dao/ServiceDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dao/SubServiceDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dao/WorkSuggestionDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dto/UserDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/Address$AddressBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/Order$OrderBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/WorkSuggestion$WorkSuggestionBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/WorkSuggestion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Customer$CustomerBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Customer$CustomerBuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Expert$ExpertBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Expert$ExpertBuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Expert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Manager$ManagerBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Manager$ManagerBuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Manager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/User$UserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/User$UserBuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/services/Service$ServiceBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/services/Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/services/SubService$SubServiceBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/services/SubService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/enumeration/OrderState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/enumeration/UserRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/model/enumeration/UserState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/ExpertService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/ManagerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/ServiceService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/SubServiceService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/WorkSuggestionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/util/HibernateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/util/ValidationUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/util/filter/UserFilter$UserFilterBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ir/maktab/util/filter/UserFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/AddNewSubServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/ChangePasswordTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindServiceByNameTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindSubServiceByNameTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindUserByEmailAndPassTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindUserByEmailTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/SaveOrderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/deleteUserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/util/IsValidEmailTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/util/IsValidPasswordTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="23HfncqvNw8eg3rnmO8v1cvrQZ4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -18,9 +150,106 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ir.maktab.model.entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ChangePasswordTest.givenWrongPassword_WhenChangePasswordCalls_ThenReturnFalseResponse">
+    <configuration name="AddNewSubServiceTest.givenWrongSubService_WhenAddSubServiceCalls_ThenReturnFalseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="home-service-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ir.maktab.service" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.AddNewSubServiceTest" />
+      <option name="METHOD_NAME" value="givenWrongSubService_WhenAddSubServiceCalls_ThenReturnFalseResponse(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangePasswordTest.givenWrongPassword_WhenChangePasswordCalls_ThenReturnFalseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="home-service-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ir.maktab.service" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.ChangePasswordTest" />
+      <option name="METHOD_NAME" value="givenWrongPassword_WhenChangePasswordCalls_ThenReturnFalseResponse(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsValidEmailTest.givenInvalidEmail_WhenIsValidEmailCalls_ThenExceptionResponseReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="home-service-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ir.maktab.util" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.util.IsValidEmailTest" />
+      <option name="METHOD_NAME" value="givenInvalidEmail_WhenIsValidEmailCalls_ThenExceptionResponseReturn(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsValidPasswordTest.givenInvalidPassword_WhenIsValidPasswordCalls_ThenExceptionResponseReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="home-service-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ir.maktab.util" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.util.IsValidPasswordTest" />
+      <option name="METHOD_NAME" value="givenInvalidPassword_WhenIsValidPasswordCalls_ThenExceptionResponseReturn(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsValidPasswordTest.givenValidPassword_WhenIsValidPasswordCalls_ThenReturnTrueResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="home-service-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ir.maktab.util" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.util.IsValidPasswordTest" />
+      <option name="METHOD_NAME" value="givenValidPassword_WhenIsValidPasswordCalls_ThenReturnTrueResponse(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ChangePasswordTest.givenWrongPassword_WhenChangePasswordCalls_ThenReturnFalseResponse" />
+        <item itemvalue="JUnit.AddNewSubServiceTest.givenWrongSubService_WhenAddSubServiceCalls_ThenReturnFalseResponse" />
+        <item itemvalue="JUnit.IsValidPasswordTest.givenInvalidPassword_WhenIsValidPasswordCalls_ThenExceptionResponseReturn" />
+        <item itemvalue="JUnit.IsValidPasswordTest.givenValidPassword_WhenIsValidPasswordCalls_ThenReturnTrueResponse" />
+        <item itemvalue="JUnit.IsValidEmailTest.givenInvalidEmail_WhenIsValidEmailCalls_ThenExceptionResponseReturn" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -31,6 +260,10 @@
       <option name="presentableId" value="Default" />
       <updated>1641396104168</updated>
       <workItem from="1641396106176" duration="329000" />
+      <workItem from="1641469124985" duration="48000" />
+      <workItem from="1641477473956" duration="20142000" />
+      <workItem from="1641542280556" duration="5969000" />
+      <workItem from="1641921038524" duration="1031000" />
     </task>
     <servers />
   </component>
