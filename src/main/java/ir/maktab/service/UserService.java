@@ -1,6 +1,6 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.UserDao;
+import ir.maktab.data.dao.UserRepository;
 import ir.maktab.exception.EmailException;
 import ir.maktab.exception.EntityExistException;
 import ir.maktab.data.model.entity.member.User;
@@ -13,32 +13,24 @@ import java.util.Optional;
  */
 @Data
 public class UserService {
-    private UserDao userDao;
+    private UserRepository userDao;
 
     public void save(User user) {
         userDao.save(user);
     }
 
-    public void update(User user) {
-        String email = user.getEmail();
-        String password = user.getPassword();
-        if (userDao.findByEmailAndPass(email, password).isPresent())
-            userDao.update(user);
-    }
-
     public void delete(User user) {
         String email = user.getEmail();
         String password = user.getPassword();
-        if (userDao.findByEmailAndPass(email, password).isPresent()){
+        if (userDao.findByEmailAndPassword(email, password).isPresent()) {
             userDao.delete(user);
-        }
-        else {
+        } else {
             throw new RuntimeException("user not exist!");
         }
     }
 
     public User findByEmailAndPass(String email, String password) {
-        Optional<User> user = userDao.findByEmailAndPass(email, password);
+        Optional<User> user = userDao.findByEmailAndPassword(email, password);
         if (user.isPresent()) {
             return user.get();
         } else {
