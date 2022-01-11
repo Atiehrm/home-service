@@ -1,5 +1,8 @@
 package ir.maktab.data.model.entity;
 
+import ir.maktab.data.model.entity.member.Customer;
+import ir.maktab.data.model.entity.member.Expert;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -14,8 +17,8 @@ public class Comment {
     private Integer id;
     private Double score;
     private String comment;
- /*   private Expert expert;
-    private Customer customer;*/
+ /  private Expert expert;
+    private Customer customer;
     @OneToOne
     private Order order;
 }
