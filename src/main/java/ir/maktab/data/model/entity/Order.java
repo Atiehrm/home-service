@@ -11,9 +11,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author arm 1/5/2022
@@ -29,6 +27,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private long suggestedPrice;
+    private long finalPrice;
     private String requestDescription;
     @ManyToOne
     private SubService subService;
@@ -46,5 +45,5 @@ public class Order {
     @ManyToOne
     private Expert expert;
     @OneToMany(mappedBy = "order")
-    private Set<WorkSuggestion> workSuggestions = new HashSet<>();
+    private List<WorkSuggestion> workSuggestions = new ArrayList<>();
 }
