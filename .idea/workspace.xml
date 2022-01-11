@@ -6,17 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/config/DaoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/config/ServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/config/DatabaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/AddNewSubServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/AddNewSubServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/ChangePasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/ChangePasswordTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindServiceByNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindServiceByNameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindSubServiceByNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindSubServiceByNameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindUserByEmailAndPassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindUserByEmailAndPassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindUserByEmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/FindUserByEmailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/SaveOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/SaveOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/deleteUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/deleteUserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
