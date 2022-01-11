@@ -5,6 +5,7 @@ import ir.maktab.exception.EmailException;
 import ir.maktab.exception.EntityExistException;
 import ir.maktab.data.model.entity.member.User;
 import lombok.Data;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
@@ -12,6 +13,7 @@ import java.util.Optional;
  * @author arm
  */
 @Data
+@Service
 public class UserService {
     private UserRepository userDao;
 

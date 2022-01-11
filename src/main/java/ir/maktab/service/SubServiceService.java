@@ -1,26 +1,29 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.SubServiceDao;
+import ir.maktab.data.dao.SubServiceRepository;
+import ir.maktab.data.model.entity.services.SubService;
 import ir.maktab.exception.EntityExistException;
 import lombok.Data;
-import ir.maktab.data.model.entity.services.SubService;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 /**
  * @author arm
  */
 @Data
+@Service
 public class SubServiceService {
-    private SubServiceDao subServiceDao;
+    private SubServiceRepository subServiceRepository;
 
+/*
     public List<SubService> getAllSubServiceName() {
-        return subServiceDao.findAll();
+        return subServiceRepository.findAll();
     }
+*/
 
     public SubService findSubServiceByName(String name) {
-        Optional<SubService> subService = subServiceDao.findByName(name);
+        Optional<SubService> subService = subServiceRepository.findByName(name);
         if (subService.isPresent()) {
             return subService.get();
         } else {
@@ -29,6 +32,6 @@ public class SubServiceService {
     }
 
     public void addNewSubService(SubService subService) {
-        subServiceDao.save(subService);
+        subServiceRepository.save(subService);
     }
 }

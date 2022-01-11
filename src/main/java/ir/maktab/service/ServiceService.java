@@ -1,11 +1,10 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.ServiceDao;
+import ir.maktab.data.dao.ServiceRepository;
+import ir.maktab.data.model.entity.services.Service;
 import ir.maktab.exception.EntityExistException;
 import lombok.Data;
-import ir.maktab.data.model.entity.services.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 /**
@@ -13,18 +12,14 @@ import java.util.Optional;
  */
 @Data
 public class ServiceService {
-    private ServiceDao serviceDao;
+    private ServiceRepository serviceRepository;
 
     public void addService(Service service) {
-        serviceDao.save(service);
-    }
-
-    public List<String> getAllServiceNames() {
-        return serviceDao.getAll();
+        serviceRepository.save(service);
     }
 
     public Service findByName(String name) {
-        Optional<Service> service = serviceDao.findByName(name);
+        Optional<Service> service = serviceRepository.findByName(name);
         if (service.isPresent()) {
             return service.get();
         } else {

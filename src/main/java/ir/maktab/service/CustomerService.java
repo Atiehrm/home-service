@@ -4,6 +4,7 @@ import ir.maktab.data.dao.CustomerRepository;
 import ir.maktab.exception.EmailException;
 import lombok.Data;
 import ir.maktab.data.model.entity.member.Customer;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
@@ -11,6 +12,7 @@ import java.util.Optional;
  * @author arm
  */
 @Data
+@Service
 public class CustomerService {
     private CustomerRepository customerRepository;
 
