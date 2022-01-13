@@ -1,9 +1,9 @@
 package ir.maktab.data.dao;
 
 import ir.maktab.data.model.entity.member.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
@@ -13,7 +13,7 @@ import java.util.Optional;
  * @author arm
  */
 @Repository
-public interface UserDao extends CrudRepository<User, Integer> {
+public interface UserDao extends JpaRepository<User, Integer> {
     Optional<User> findByEmail(String email);
 
     Optional<User> findByEmailAndPassword(String email, String password);

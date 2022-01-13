@@ -1,15 +1,12 @@
 package ir.maktab.data.dao;
 
-import ir.maktab.util.HibernateUtil;
 import ir.maktab.data.model.entity.Order;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
  * @author arm
  */
 @Repository
-public interface OrderDao extends CrudRepository<Order, Integer> {
+public interface OrderDao extends JpaRepository<Order, Integer> {
 }
