@@ -4,10 +4,7 @@ import ir.maktab.data.model.entity.member.Customer;
 import ir.maktab.data.model.entity.member.Expert;
 import ir.maktab.data.model.entity.services.SubService;
 import ir.maktab.data.model.enumeration.OrderState;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -17,6 +14,8 @@ import java.util.*;
  * @author arm 1/5/2022
  */
 @Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
