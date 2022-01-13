@@ -49,7 +49,7 @@ public class ExpertService {
         if (expert.isPresent()) {
             return expert.get();
         } else {
-            throw new EmailException("expert email not found! ");
+            throw new EmailException("expert email not found!");
         }
     }
     public void addSubServiceToExpertList(String email, String subService) {
