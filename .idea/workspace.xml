@@ -6,7 +6,62 @@
   <component name="ChangeListManager">
     <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/service/ExpertService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/service/ExpertService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/config/DaoConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/config/ServiceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dao/CustomerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dao/ExpertDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dao/ManagerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dao/OrderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dao/ServiceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dao/SubServiceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dao/WorkSuggestionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/dto/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/Address$AddressBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/Order$OrderBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/WorkSuggestion$WorkSuggestionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/WorkSuggestion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Customer$CustomerBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Customer$CustomerBuilderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Expert$ExpertBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Expert$ExpertBuilderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Expert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Manager$ManagerBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Manager$ManagerBuilderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/User$UserBuilderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/member/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/services/Service$ServiceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/services/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/services/SubService$SubServiceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/entity/services/SubService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/enumeration/OrderState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/enumeration/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/model/enumeration/UserState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/service/ExpertService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/ExpertService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/service/ManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/ManagerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/service/ServiceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/ServiceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/service/SubServiceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/SubServiceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/service/WorkSuggestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/service/WorkSuggestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/util/HibernateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/util/ValidationUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ir/maktab/util/ValidationUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/util/filter/UserFilter$UserFilterBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/maktab/util/filter/UserFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/AddNewSubServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/AddNewSubServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/ChangePasswordTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/ChangePasswordTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindServiceByNameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindServiceByNameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindSubServiceByNameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindSubServiceByNameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindUserByEmailAndPassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindUserByEmailAndPassTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindUserByEmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/FindUserByEmailTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/SaveOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/SaveOrderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/deleteUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ir/maktab/service/deleteUserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +108,7 @@
       <recent name="ir.maktab.model.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChangePasswordTest.givenWrongPassword_WhenChangePasswordCalls_ThenReturnFalseResponse">
+  <component name="RunManager" selected="JUnit.addSuggestionToOrderTest.givenBiggerPriceThanSubServicePrice_whenCallsAddSuggestion_thenFalseResponse">
     <configuration name="AddNewSubServiceTest.givenWrongSubService_WhenAddSubServiceCalls_ThenReturnFalseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="home-service-project" />
       <extension name="coverage">
@@ -81,22 +136,6 @@
       <option name="PACKAGE_NAME" value="ir.maktab.service" />
       <option name="MAIN_CLASS_NAME" value="ir.maktab.service.ChangePasswordTest" />
       <option name="METHOD_NAME" value="givenWrongPassword_WhenChangePasswordCalls_ThenReturnFalseResponse(java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IsValidEmailTest.givenInvalidEmail_WhenIsValidEmailCalls_ThenExceptionResponseReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="home-service-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ir.maktab.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ir.maktab.util" />
-      <option name="MAIN_CLASS_NAME" value="ir.maktab.util.IsValidEmailTest" />
-      <option name="METHOD_NAME" value="givenInvalidEmail_WhenIsValidEmailCalls_ThenExceptionResponseReturn(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,13 +173,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="addSuggestionToOrderTest.givenBiggerPriceThanSubServicePrice_whenCallsAddSuggestion_thenFalseResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="home-service-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ir.maktab.service" />
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.service.addSuggestionToOrderTest" />
+      <option name="METHOD_NAME" value="givenBiggerPriceThanSubServicePrice_whenCallsAddSuggestion_thenFalseResponse(java.lang.String,ir.maktab.data.model.entity.Order,long,long,java.util.Date)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.addSuggestionToOrderTest.givenBiggerPriceThanSubServicePrice_whenCallsAddSuggestion_thenFalseResponse" />
         <item itemvalue="JUnit.ChangePasswordTest.givenWrongPassword_WhenChangePasswordCalls_ThenReturnFalseResponse" />
         <item itemvalue="JUnit.AddNewSubServiceTest.givenWrongSubService_WhenAddSubServiceCalls_ThenReturnFalseResponse" />
         <item itemvalue="JUnit.IsValidPasswordTest.givenInvalidPassword_WhenIsValidPasswordCalls_ThenExceptionResponseReturn" />
         <item itemvalue="JUnit.IsValidPasswordTest.givenValidPassword_WhenIsValidPasswordCalls_ThenReturnTrueResponse" />
-        <item itemvalue="JUnit.IsValidEmailTest.givenInvalidEmail_WhenIsValidEmailCalls_ThenExceptionResponseReturn" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +214,7 @@
       <workItem from="1641921038524" duration="1031000" />
       <workItem from="1642055237767" duration="84000" />
       <workItem from="1642061618305" duration="367000" />
-      <workItem from="1642083482772" duration="9985000" />
+      <workItem from="1642083482772" duration="11576000" />
     </task>
     <servers />
   </component>
