@@ -80,12 +80,20 @@ public class CustomerService {
 
     public void chooseExpertForOrder(int orderId, int expertId) {
         Optional<Order> order = orderDao.findById(orderId);
+        Optional<Expert> expert = expertDao.findById(expertId);
         if (order.isPresent()) {
             Order confirmedOrder = order.get();
-            Expert expert = expertDao.findById(expertId).get();
-            confirmedOrder.setExpert(expert);
+            if (expert.isPresent()){
+            Expert confirmedExpert = expert.get();
+            confirmedOrder.setExpert(confirmedExpert);
             confirmedOrder.setOrderState(OrderState.PENDING_EXPERTS_IN_PLACE);
             orderDao.save(confirmedOrder);
+        }else {
+                throw new EntityExistException("expert not found!");
+            }
+        }
+        else {
+            throw new EntityExistException("order not found!");
         }
     }
 
