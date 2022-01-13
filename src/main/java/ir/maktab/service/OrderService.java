@@ -1,6 +1,6 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.OrderRepository;
+import ir.maktab.data.dao.OrderDao;
 import ir.maktab.data.model.entity.Order;
 import lombok.Data;
 import org.springframework.stereotype.Service;
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 @Data
 @Service
 public class OrderService {
-    private OrderRepository orderRepository;
+    private OrderDao orderDao;
 
     public void save(Order order) {
-        orderRepository.save(order);
+        orderDao.save(order);
     }
 }

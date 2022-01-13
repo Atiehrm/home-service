@@ -1,6 +1,6 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.CustomerRepository;
+import ir.maktab.data.dao.CustomerDao;
 import ir.maktab.exception.EmailException;
 import lombok.Data;
 import ir.maktab.data.model.entity.member.Customer;
@@ -14,14 +14,14 @@ import java.util.Optional;
 @Data
 @Service
 public class CustomerService {
-    private CustomerRepository customerRepository;
+    private CustomerDao customerDao;
 
     public void save(Customer customer) {
-        customerRepository.save(customer);
+        customerDao.save(customer);
     }
 
     public Customer findByEmail(String email) {
-        Optional<Customer> customer = customerRepository.findByEmail(email);
+        Optional<Customer> customer = customerDao.findByEmail(email);
         if (customer.isPresent()) {
             return customer.get();
         } else {

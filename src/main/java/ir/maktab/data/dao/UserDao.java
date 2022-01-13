@@ -13,7 +13,7 @@ import java.util.Optional;
  * @author arm
  */
 @Repository
-public interface UserRepository extends CrudRepository<User, Integer> {
+public interface UserDao extends CrudRepository<User, Integer> {
     Optional<User> findByEmail(String email);
 
     Optional<User> findByEmailAndPassword(String email, String password);

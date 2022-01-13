@@ -10,6 +10,6 @@ import java.util.Optional;
  * @author arm 1/5/2022
  */
 @Repository
-public interface ManagerRepository extends CrudRepository<Manager, Integer> {
+public interface ManagerDao extends CrudRepository<Manager, Integer> {
     Optional<Manager> findByEmail(String email);
 }

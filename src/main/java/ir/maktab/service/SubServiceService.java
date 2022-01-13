@@ -1,6 +1,6 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.SubServiceRepository;
+import ir.maktab.data.dao.SubServiceDao;
 import ir.maktab.data.model.entity.services.SubService;
 import ir.maktab.exception.EntityExistException;
 import lombok.Data;
@@ -14,16 +14,16 @@ import java.util.Optional;
 @Data
 @Service
 public class SubServiceService {
-    private SubServiceRepository subServiceRepository;
+    private SubServiceDao subServiceDao;
 
 /*
     public List<SubService> getAllSubServiceName() {
-        return subServiceRepository.findAll();
+        return subServiceDao.findAll();
     }
 */
 
     public SubService findSubServiceByName(String name) {
-        Optional<SubService> subService = subServiceRepository.findByName(name);
+        Optional<SubService> subService = subServiceDao.findByName(name);
         if (subService.isPresent()) {
             return subService.get();
         } else {
@@ -32,6 +32,6 @@ public class SubServiceService {
     }
 
     public void addNewSubService(SubService subService) {
-        subServiceRepository.save(subService);
+        subServiceDao.save(subService);
     }
 }

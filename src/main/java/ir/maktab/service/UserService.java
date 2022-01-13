@@ -1,6 +1,6 @@
 package ir.maktab.service;
 
-import ir.maktab.data.dao.UserRepository;
+import ir.maktab.data.dao.UserDao;
 import ir.maktab.exception.EmailException;
 import ir.maktab.exception.EntityExistException;
 import ir.maktab.data.model.entity.member.User;
@@ -15,7 +15,7 @@ import java.util.Optional;
 @Data
 @Service
 public class UserService {
-    private UserRepository userDao;
+    private UserDao userDao;
 
     public void save(User user) {
         userDao.save(user);

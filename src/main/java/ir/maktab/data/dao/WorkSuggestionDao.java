@@ -1,6 +1,6 @@
 package ir.maktab.data.dao;
 
-import ir.maktab.data.model.entity.Comment;
+import ir.maktab.data.model.entity.WorkSuggestion;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -8,5 +8,6 @@ import org.springframework.stereotype.Repository;
  * @author arm
  */
 @Repository
-public interface CommentRepository extends CrudRepository<Comment,Integer> {
+public interface WorkSuggestionDao extends CrudRepository<WorkSuggestion, Integer> {
+
 }
