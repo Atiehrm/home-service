@@ -99,7 +99,7 @@ public class CustomerService {
     }
 
     public List<Order> getListOrders(String email) {
-        List<Order> ordersList = null;
+        List<Order> ordersList;
 
         Optional<Customer> optionalCustomer = customerDao.findByEmail(email);
         if (optionalCustomer.isPresent()) {
