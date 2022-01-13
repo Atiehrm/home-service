@@ -61,14 +61,8 @@ public class CustomerService {
     }
 
     public void saveOrder(Order order) {
-        double suggestedPrice = order.getSuggestedPrice();
-        double finalPrice = order.getFinalPrice();
-        if (finalPrice >= suggestedPrice) {
-            order.setOrderState(OrderState.PENDING_EXPERTS_SUGGESTION);
-            orderDao.save(order);
-        } else {
-            throw new RuntimeException("suggested price is bigger than final Price");
-        }
+        order.setOrderState(OrderState.PENDING_EXPERTS_SUGGESTION);
+        orderDao.save(order);
     }
 
     public List<WorkSuggestion> getListOffersSortByScoreOrPrice(Order order, boolean byPrice, boolean byScoreExpert) {
@@ -86,7 +80,7 @@ public class CustomerService {
     public void chooseExpertForOrder(int orderId, int expertId) {
         Optional<Order> order = orderDao.findById(orderId);
         if (order.isPresent()) {
-            Order confirmedOrder =order.get();
+            Order confirmedOrder = order.get();
             Expert expert = expertDao.findById(expertId).get();
             confirmedOrder.setExpert(expert);
             confirmedOrder.setOrderState(OrderState.PENDING_EXPERTS_IN_PLACE);
