@@ -93,4 +93,13 @@ public class CustomerService {
             orderDao.save(confirmedOrder);
         }
     }
+
+    public Customer findByEmailAndPassword(String email, String password) {
+        Optional<Customer> customer = customerDao.findByEmailAAndPassword(email, password);
+        if (customer.isPresent()) {
+            return customer.get();
+        } else {
+            throw new RuntimeException("not found customer by this email and password");
+        }
+    }
 }
