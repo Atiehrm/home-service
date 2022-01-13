@@ -18,7 +18,7 @@ public class GetOrderListTest {
     }
 
     @Test
-    void wheCallsGetOrderList_ThenReturnExpectedResponse() {
+    void whenCallsGetOrderList_ThenReturnActualResponse() {
         Expert expert = expertService.findByEmail("atiehExpert@email.com");
         int result = expertService.getOrderList(expert).size();
         Assertions.assertEquals(1,result);

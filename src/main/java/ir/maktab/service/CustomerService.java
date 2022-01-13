@@ -10,6 +10,9 @@ import ir.maktab.data.model.enumeration.UserState;
 import ir.maktab.exception.EmailException;
 import ir.maktab.exception.EntityExistException;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -21,6 +24,9 @@ import java.util.Optional;
  * @author arm
  */
 @Data
+@Getter
+@Setter
+@NoArgsConstructor
 @Service
 public class CustomerService {
     private CustomerDao customerDao;
@@ -40,7 +46,6 @@ public class CustomerService {
         this.expertDao = expertDao;
         this.worksuggestionDao = workSuggestionDao;
     }
-
 
     public void save(Customer customer) {
 
@@ -83,16 +88,15 @@ public class CustomerService {
         Optional<Expert> expert = expertDao.findById(expertId);
         if (order.isPresent()) {
             Order confirmedOrder = order.get();
-            if (expert.isPresent()){
-            Expert confirmedExpert = expert.get();
-            confirmedOrder.setExpert(confirmedExpert);
-            confirmedOrder.setOrderState(OrderState.PENDING_EXPERTS_IN_PLACE);
-            orderDao.save(confirmedOrder);
-        }else {
+            if (expert.isPresent()) {
+                Expert confirmedExpert = expert.get();
+                confirmedOrder.setExpert(confirmedExpert);
+                confirmedOrder.setOrderState(OrderState.PENDING_EXPERTS_IN_PLACE);
+                orderDao.save(confirmedOrder);
+            } else {
                 throw new EntityExistException("expert not found!");
             }
-        }
-        else {
+        } else {
             throw new EntityExistException("order not found!");
         }
     }

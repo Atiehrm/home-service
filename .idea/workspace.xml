@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ir/maktab/service/ChooseExpertForOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ir/maktab/service/ChooseExpertForOrderTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="67e65158-60a8-4964-9b1e-3b39655e0770" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +156,7 @@
       <workItem from="1641921038524" duration="1031000" />
       <workItem from="1642055237767" duration="84000" />
       <workItem from="1642061618305" duration="367000" />
-      <workItem from="1642083482772" duration="14271000" />
+      <workItem from="1642083482772" duration="14809000" />
     </task>
     <servers />
   </component>
