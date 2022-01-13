@@ -1,9 +1,8 @@
 package ir.maktab.data.model.entity.member;
 
 import ir.maktab.data.model.entity.services.Service;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import ir.maktab.data.model.entity.services.SubService;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
@@ -15,6 +14,8 @@ import java.util.List;
  */
 @Entity
 @Data
+@Getter
+@Setter
 @SuperBuilder
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -23,7 +24,7 @@ public class Expert extends User {
     @Column(nullable = false,columnDefinition = "BLOB",length = 300)
     private byte[] image;
     @ManyToMany(fetch = FetchType.EAGER)
-    private List<Service> services = new ArrayList<>();
+    private List<SubService> services = new ArrayList<>();
     private long credit;
     private double score;
 

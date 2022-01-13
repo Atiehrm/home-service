@@ -21,4 +21,7 @@ public interface OrderDao extends JpaRepository<Order, Integer> {
 
     @Query(value = "select w from WorkSuggestion w inner join w.expert e inner join e.services s where w.order.id=:id")
     List<WorkSuggestion> getListWorkSuggestionsBySort(@Param("id") int ordersId, Sort sort);
+
+    @Query(value = "from Order o where o.expert.id=:id")
+    List<Order> getOrderListForExpert(@Param("id") int expertId);
 }

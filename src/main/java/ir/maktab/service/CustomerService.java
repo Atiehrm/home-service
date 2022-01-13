@@ -8,6 +8,7 @@ import ir.maktab.data.model.entity.member.Expert;
 import ir.maktab.data.model.enumeration.OrderState;
 import ir.maktab.data.model.enumeration.UserState;
 import ir.maktab.exception.EmailException;
+import ir.maktab.exception.EntityExistException;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -65,7 +66,7 @@ public class CustomerService {
         orderDao.save(order);
     }
 
-    public List<WorkSuggestion> getListOffersSortByScoreOrPrice(Order order, boolean byPrice, boolean byScoreExpert) {
+    public List<WorkSuggestion> getSuggestionListSortByScoreOrPrice(Order order, boolean byPrice, boolean byScoreExpert) {
         if (byPrice && !byScoreExpert) {
             return orderDao.getListWorkSuggestionsBySort(order.getId(), Sort.by("offerPrice").ascending());
         } else if (!byPrice && byScoreExpert) {
@@ -95,5 +96,22 @@ public class CustomerService {
         } else {
             throw new RuntimeException("not found customer by this email and password");
         }
+    }
+
+    public List<Order> getListOrders(String email) {
+        List<Order> ordersList = null;
+
+        Optional<Customer> optionalCustomer = customerDao.findByEmail(email);
+        if (optionalCustomer.isPresent()) {
+            Customer customer = optionalCustomer.get();
+            ordersList = customerDao.getAllOrders(customer.getId());
+        } else {
+            throw new EntityExistException("not found customer by this email");
+        }
+        return ordersList;
+    }
+
+    public List<WorkSuggestion> getSuggestionList(Order order) {
+        return orderDao.getWorkSuggestionList(order.getId());
     }
 }
