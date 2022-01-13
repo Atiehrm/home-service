@@ -4,10 +4,12 @@ import ir.maktab.data.dao.*;
 import ir.maktab.data.model.entity.Order;
 import ir.maktab.data.model.entity.WorkSuggestion;
 import ir.maktab.data.model.entity.member.Expert;
+import ir.maktab.data.model.entity.member.User;
 import ir.maktab.data.model.entity.services.SubService;
 import ir.maktab.data.model.enumeration.OrderState;
 import ir.maktab.exception.EmailException;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -18,6 +20,7 @@ import java.util.Optional;
  * @author arm
  */
 @Data
+@NoArgsConstructor
 @Service
 public class ExpertService {
     ExpertDao expertDao;
@@ -35,6 +38,8 @@ public class ExpertService {
         this.customerDao = customerDao;
     }
 
+
+
     public void save(Expert expert) {
         expertDao.save(expert);
     }
@@ -47,7 +52,6 @@ public class ExpertService {
             throw new EmailException("expert email not found! ");
         }
     }
-
     public void addSubServiceToExpertList(String email, String subService) {
         Expert expert = findByEmail(email);
         Optional<SubService> subServicesOptional = subServiceDao.findByName(subService);
